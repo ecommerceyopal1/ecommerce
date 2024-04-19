@@ -37,7 +37,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="" width="50"></a>
+            <a href="#"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="" width="80"></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -51,7 +51,7 @@
                 <?php if (empty($_SESSION['id_usuario'])) { ?>
                     <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user"></i> Login</a>
                 <?php } else {  ?>
-                    <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i> Tu cuenta</a>
+                    <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i> <?php echo $_SESSION['nombre_usuario']; ?></a>
                 <?php } ?>
             </div>
         </div>
@@ -60,6 +60,7 @@
                 <li class="active"><a href="<?php echo BASE_URL; ?>">Inicio</a></li>
                 <li><a href="<?php echo BASE_URL . 'principal/productos'; ?>">Productos</a></li>
                 <li><a href="<?php echo BASE_URL . 'principal/contactos'; ?>">Contactos</a></li>
+                <li><a href="<?php echo BASE_URL . 'principal/detalles'; ?>">detalles</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -94,16 +95,16 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/X"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://co.pinterest.com/#top"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__auth">
                                 <?php if (empty($_SESSION['id_usuario'])) { ?>
                                     <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user"></i> Login</a>
                                 <?php } else {  ?>
-                                    <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i> Tu cuenta</a>
+                                    <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i><?php echo $_SESSION['nombre_usuario']; ?></a>
                                 <?php } ?>
                             </div>
                         </div>
@@ -115,7 +116,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="LOGO" width="50"></a>
+                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="80" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-6">

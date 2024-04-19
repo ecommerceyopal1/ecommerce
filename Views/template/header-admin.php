@@ -52,7 +52,7 @@
 
             <div class="left-side-logo d-block d-lg-none">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="20" alt="logo"></a>
+                    <a href="index.html" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="50" alt="logo"></a>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
 
                     <div class="topbar-left	d-none d-lg-block">
                         <div class="text-center">
-                            <a href="<?php echo BASE_URL; ?>" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="22" alt="logo"></a>
+                            <a href="<?php echo BASE_URL; ?>" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="90" alt="logo"></a>
                         </div>
                     </div>
 

@@ -33,10 +33,10 @@
             <button type="submit" class="site-btn">Suscribir</button>
           </form>
           <div class="footer__widget__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/X"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://co.pinterest.com/#top"><i class="fa fa-pinterest-p"></i></a>
           </div>
         </div>
       </div>
