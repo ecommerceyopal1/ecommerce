@@ -39,7 +39,7 @@
                     </table>
                 </div>
                 <div class="shoping__cart__btns">
-                    <!-- <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a> -->
+                    < <a href="./productos" class="primary-btn cart-btn">CONTINUE COMPRANDO</a> 
                     <a href="#" class="primary-btn cart-btn cart-btn-right" id="botonVaciar"><span class="icon_loading"></span>
                         Vaciar carrito</a>
                 </div>

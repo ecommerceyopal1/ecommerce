@@ -14,7 +14,7 @@ class DetallesController {
 
         if ($product_details) {
             // Incluye la vista de detalles y pasa los detalles del producto
-            include "Views/details.php";
+            include "Views\principal\detalles.php";
         } else {
             // Si no se encontraron detalles del producto, muestra un mensaje de error
             echo "<p>Producto no encontrado.</p>";

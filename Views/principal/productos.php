@@ -68,7 +68,7 @@
                                     </ul>
                                 </div>
                                 <div class="featured__item__text">
-                                <h6><a href="/detalles.php?id=<?php echo $producto['id']; ?>"><?php echo $producto['nombre']; ?></a></h6>
+                                <h6><a href="./detalles?id=<?php echo $producto['id']; ?>"><?php echo $producto['nombre']; ?></a></h6>
                                  <h5>$<?php echo $producto['precio']; ?></h5>
                                  </div>
                             </div>
@@ -144,7 +144,7 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">${producto.nombre}</a></h6>
+                            <h6><a href="./detalles">${producto.nombre}</a></h6>
                             <h5>$${producto.precio}</h5>
                         </div>
                     </div>
