@@ -124,4 +124,12 @@ class Productos extends Controller
         }
         die();
     }
+    public function detalles($id)
+    {
+        // Obtener los detalles del producto por su ID
+        $data['producto'] = $this->model->getProducto($id);
+
+        // Pasar los detalles del producto a la vista
+        $this->views->getView('principal/detalles', "index", $data);
+    }
 }

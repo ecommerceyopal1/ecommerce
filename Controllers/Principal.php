@@ -2,6 +2,7 @@
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -121,9 +122,23 @@ class Principal extends Controller
     {
         $data['title'] = 'Tu carrito';
         $data['negocio'] = $this->model->getNegocio();
+    
         $data['categorias'] = $this->model->getCategorias();
         $this->views->getView('principal', "detalles", $data);
+        // Verificar si se proporcionó un ID de producto
+    if(isset($_GET['id']) && !empty($_GET['id'])) {
+        // Obtener el ID del producto de la URL
+        $idProducto = $_GET['id'];
+        
+        // Obtener los detalles del producto usando el controlador adecuado
+        $detallesController = new DetallesController();
+        $detallesController->mostrarDetalles($idProducto);
+    } else {
+        // Si no se proporcionó un ID de producto, mostrar un mensaje de error o redirigir a otra página
+        echo "Error: No se proporcionó un ID de producto.";
     }
+    }
+
 
     public function listaProductos()
     {
