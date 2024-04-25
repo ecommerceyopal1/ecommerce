@@ -60,7 +60,7 @@
                 <li class="active"><a href="<?php echo BASE_URL; ?>">Inicio</a></li>
                 <li><a href="<?php echo BASE_URL . 'principal/productos'; ?>">Productos</a></li>
                 <li><a href="<?php echo BASE_URL . 'principal/contactos'; ?>">Contactos</a></li>
-                <li><a href="<?php echo BASE_URL . 'principal/detalles'; ?>">detalles</a></li>
+                <!-- <li><a href="<?php echo BASE_URL . 'principal/detalles'; ?>">detalles</a></li>-->
                 
             </ul>
         </nav>
@@ -126,7 +126,7 @@
                             <li class="active"><a href="<?php echo BASE_URL; ?>">Inicio</a></li>
                             <li><a href="<?php echo BASE_URL . 'principal/productos'; ?>">Productos</a></li>
                             <li><a href="<?php echo BASE_URL . 'principal/contactos'; ?>">Contactos</a></li>
-                            <li><a href="<?php echo BASE_URL . 'principal/detalles'; ?>">DETALLES</a></li>
+                             <!--<li><a href="<?php echo BASE_URL . 'principal/detalles'; ?>">DETALLES</a></li>-->
                         </ul>
                     </nav>
                 </div>

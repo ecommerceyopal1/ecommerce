@@ -260,4 +260,5 @@ class Ventas extends Controller
         echo json_encode($res);
         die();
     }
+    
 }

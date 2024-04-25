@@ -64,6 +64,37 @@
                     </ul>
                     <a href="<?php echo BASE_URL . 'principal/order'; ?>" class="primary-btn mb-2">CHECKOUT</a>
                     <input type="hidden" id="whatsapp-negocio" value="<?php echo $data['negocio']['whatsapp']; ?>">
+                    <form>
+                    <script type="text/javascript" src="https://maf.pagosonline.net/ws/fp/tags.js?id=${deviceSessionId}80200"></script>
+<noscript>
+   <iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;" src="https://maf.pagosonline.net/ws/fp/tags.js?id=${deviceSessionId}80200"></iframe>
+</noscript>
+  <script
+    src="https://checkout.wompi.co/widget.js"
+    data-render="button"
+    data-public-key="pub_test_X0zDA9xoKdePzhd8a0x9HAez7HgGO2fH"
+    data-currency="COP"
+    data-amount-in-cents="4950000"
+    data-reference="4XMPGKWWPKWQTO"
+    data-signature:integrity="37c8407747e595535433ef8f6a811d853cd943046624a0ec04662b17bbf33bf5"
+  ></script>
+</form>
+<form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+  <input name="merchantId"      type="hidden"  value="1007305"   >
+  <input name="accountId"       type="hidden"  value="1016083 " >
+  <input name="description"     type="hidden"  value="VENTA EN LINEA ECOMMERCE-YOPAL"  >
+  <input name="referenceCode"   type="hidden"  value="pago0001" >
+  <input name="amount"          type="hidden"  value="5.00"   >
+  <input name="tax"             type="hidden"  value="0"  >
+  <input name="taxReturnBase"   type="hidden"  value="0" >
+  <input name="currency"        type="hidden"  value="USD" >
+  <input name="signature"       type="hidden"  value="PK7jZf899269B49RxE9F5W146e"  >
+  <input name="test"            type="hidden"  value="0" >
+  <input name="buyerEmail"      type="hidden"  value="cliente1@test.com" >
+  <input name="responseUrl"     type="hidden"  value="http://localhost/ecommerce/principal/carrito/response" >
+  <input name="confirmationUrl" type="hidden"  value="http://localhost/ecommerce/principal/carrito/confirmation" >
+  <input name="Submit"          type="submit"  value="pago con PAYU" >
+</form>
                     <a href="#" class="btn btn-success btn-block" id="carrito-whatsapp">WHATSAPP</a>
                 </div>
             </div>
@@ -75,6 +106,11 @@
 <?php include "Views/template/footer.php"; ?>
 
 <script src="<?php echo BASE_URL; ?>public/js/carrito.js"></script>
+<script
+  type="text/javascript"
+  src="https://checkout.wompi.co/widget.js"
+></script>
+
 </body>
 
 </html>
